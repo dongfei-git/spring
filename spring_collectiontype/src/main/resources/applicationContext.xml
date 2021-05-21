@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="stu" class="tech.dongfei.spring.collectiontype.Student">
+        <property name="courses">
+            <array>
+                <value>java</value>
+                <value>golang</value>
+            </array>
+        </property>
+
+        <property name="list">
+            <list>
+                <value>tom</value>
+                <value>tmm</value>
+            </list>
+        </property>
+
+        <property name="map">
+            <map>
+                <entry key="JAVA" value="java"/>
+                <entry key="GOLANG" value="golang"/>
+            </map>
+        </property>
+
+        <property name="set">
+            <set>
+                <value>MySQL</value>
+                <value>Redis</value>
+            </set>
+        </property>
+    </bean>
+
+</beans>
