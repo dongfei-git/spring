@@ -31,6 +31,20 @@
                 <value>Redis</value>
             </set>
         </property>
+
+        <property name="courseList">
+            <list>
+                <ref bean="course01"/>
+                <ref bean="course02"/>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="course01" class="tech.dongfei.spring.collectiontype.Course">
+        <property name="cname" value="java"/>
+    </bean>
+    <bean id="course02" class="tech.dongfei.spring.collectiontype.Course">
+        <property name="cname" value="golang"/>
     </bean>
 
 </beans>
