@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="myBean" class="tech.dongfei.spring.factorybean.MyBean"></bean>
+
+    <bean id="order" class="tech.dongfei.spring.bean.Order" init-method="initMethod" destroy-method="destroyMethod">
+        <property name="oname" value="no1"/>
+    </bean>
+
+<!--    配置后置处理器-->
+    <bean id="myBeanPost" class="tech.dongfei.spring.bean.MyBeanPost"></bean>
+</beans>
